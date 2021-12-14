@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="Header">
+      Future Land!
+    </div>
+    <div class="mainContent">
+      <div class="pageBox" id="left-side">
+
+        <div class="leftSideBar">
+
+          <button class="button" id="Beginning-button">Beginning</button>
+          <button class="button" id="MySpace-button">MySpace</button>
+          <button class="button" id="Facebook-button">Facebook</button>
+          <button class="button" id="Meta-button">Meta</button>
+
+        </div>
+
+        <div class="leftContent">
+
+          <div class="leftHeader">
+            Welcome to SocialPedia!
+          </div>
+
+          <div class="leftInfo">
+            Click the buttons on the left to learn more!
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="pageBox" id="right-side">
+        <!-- NOTE: A div for all the chat messages -->
+        <div id="chatDisplay"></div>
+
+        <!-- NOTE: A div for the input box. This way we don't have to use "fixed" -->
+        <div class="fixedBox">
+          <input type="text" id="message-input">
+          <button class="button" id="send-button">Send</button>
+        </div>
+
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="scriptLeft.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box; /* Getting some sizing issues due to the borders, this fixes that */
+  font-family: 'Readex Pro', sans-serif;
+}
+div {
+  /*border-style: solid;
+  border-width: medium;
+  border-color: blue;*/
+}
+
+.Header{
+  text-align: center;
+}
+
+.mainContent {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 95vh;
+}
+
+.pageBox {
+  width: 50%;
+  /* height: 95vh; */
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+#left-side {
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+}
+
+.leftSideBar {
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sideContent{
+  height: 60px;
+  text-align: center;
+}
+
+.leftContent {
+  width: 85%;
+}
+
+.leftHeader {
+  border-bottom-style: solid;
+  border-width: medium;
+  font-size: 40px;
+}
+
+.leftInfo {
+  padding-top: 4%;
+  padding-left: 4%;
+}
+
+#right-side {
+  background-color: #1d1b29;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#chatDisplay {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-grow: 1;
+}
+
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay-text{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.fixedBox {
+  display:flex;
+  /* position: fixed; */
+  justify-content: center;
+  /* margin-top: 37%; */
+  /* width: 50%; */
+  height:100px;
+  min-height: 100px;
+}
+
+#message-input{
+  width: 70%;
+  margin-right: 5vh;
+  font-size: x-large;
+  text-align: center;
+}
+
+#send-button{
+  background-color: #ff7aa0;
+  border: none;
+  color: white;
+}
